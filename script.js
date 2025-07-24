@@ -2,7 +2,7 @@ function isSameType(value1, value2) {
 
     if (Number.isNaN(value1) && Number.isNaN(value2)) {
         return true;
-    }else{
+    }else if(Number.isNaN(value1) || Number.isNaN(value2)){
 		return false;
 	}
     const result = typeof value1 === typeof value2;
